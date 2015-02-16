@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.slisson.mps.editor.grammar.demolang/de.slisson.mps.editor.grammar.demolang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.slisson.mps.editor.grammar.demolang2/de.slisson.mps.editor.grammar.demolang2.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.slisson.mps.editor.grammar/de.slisson.mps.editor.grammar.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.editor.grammar.runtime/de.slisson.mps.editor.grammar.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.slisson.mps.editor.grammar.sandbox/de.slisson.mps.editor.grammar.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
