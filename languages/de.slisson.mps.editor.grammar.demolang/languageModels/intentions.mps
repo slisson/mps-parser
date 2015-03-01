@@ -13,6 +13,7 @@
     <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
     <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
     <import index="nu8v" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
+    <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
     <import index="uisy" ref="r:22f6aa18-0fbc-41be-b461-70d1409640c5(de.slisson.mps.editor.grammar.demolang.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -121,6 +122,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz" />
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -823,6 +825,33 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="4mgNqlB_2hf" role="3cqZAp">
+          <node concept="3cpWsn" id="4mgNqlB_2hg" role="3cpWs9">
+            <property role="TrG5h" value="expectedConcept" />
+            <node concept="3bZ5Sz" id="4mgNqlB_arb" role="1tU5fm" />
+            <node concept="10QFUN" id="4mgNqlB_aHr" role="33vP2m">
+              <node concept="2OqwBi" id="4mgNqlB_2hh" role="10QFUP">
+                <node concept="2OqwBi" id="4mgNqlB_2hi" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4mgNqlB_2hj" role="2Oq$k0">
+                    <node concept="37vLTw" id="4mgNqlB_2hk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3gYWnfhvVux" resolve="selected" />
+                    </node>
+                    <node concept="liA8E" id="4mgNqlB_2hl" role="2OqNvi">
+                      <ref role="37wK5l" to="nu8v:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4mgNqlB_2hm" role="2OqNvi">
+                    <ref role="37wK5l" to="ec5l:~SNode.getContainmentLink():org.jetbrains.mps.openapi.language.SContainmentLink" resolve="getContainmentLink" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4mgNqlB_2hn" role="2OqNvi">
+                  <ref role="37wK5l" to="t3eg:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                </node>
+              </node>
+              <node concept="3bZ5Sz" id="4mgNqlB_aHs" role="10QFUM" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3gYWnfhImex" role="3cqZAp">
           <node concept="3cpWsn" id="3gYWnfhImey" role="3cpWs9">
             <property role="TrG5h" value="symbolInstance" />
@@ -887,6 +916,14 @@
               <ref role="37wK5l" to="tbg8:5x2SdBrvcL0" resolve="parse" />
               <node concept="37vLTw" id="3gYWnfhw6BV" role="37wK5m">
                 <ref role="3cqZAo" node="3gYWnfhw3qV" resolve="ruleInstance" />
+              </node>
+              <node concept="2ShNRf" id="4mgNqlB_56X" role="37wK5m">
+                <node concept="1pGfFk" id="4mgNqlB_5k7" role="2ShVmc">
+                  <ref role="37wK5l" to="tbg8:qtPA8k1LyF" resolve="ConceptRuleType" />
+                  <node concept="37vLTw" id="4mgNqlB_5lQ" role="37wK5m">
+                    <ref role="3cqZAo" node="4mgNqlB_2hg" resolve="expectedConcept" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
